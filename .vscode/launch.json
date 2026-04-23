@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+           {
+            "name": "PC Unit Test (WSL)",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": ".",
+            "program": "${workspaceFolder}/modtest",
+            "MIMode": "gdb",
+            "stopAtEntry": true,
+            "setupCommands": [
+                { "text": "-enable-pretty-printing"},  { "text": "set output-radix 16" }
+            ],
+            "sourceFileMap": {
+                "/build/glibc-Cl5G7W/glibc-2.35": "/usr/src/glibc/glibc-2.35"
+            },        
+        }
+    ]
+}
